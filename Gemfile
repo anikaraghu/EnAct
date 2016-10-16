@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
+
 if Gem::Version.new(Bundler::VERSION) < Gem::Version.new('1.5.0')
   abort "Redmine requires Bundler 1.5.0 or higher (you're using #{Bundler::VERSION}).\nPlease update with 'gem update bundler'."
 end
@@ -24,6 +27,10 @@ gem "rails-html-sanitizer", ">= 1.0.3"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin, :jruby]
 gem "rbpdf", "~> 1.19.0"
+
+# For Heroku
+gem 'rails_12factor', group: :production
+
 
 # Optional gem for LDAP authentication
 group :ldap do

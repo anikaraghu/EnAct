@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
+ruby '2.3.1'
 
 
 if Gem::Version.new(Bundler::VERSION) < Gem::Version.new('1.5.0')
